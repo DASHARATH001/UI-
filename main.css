@@ -1,0 +1,486 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+nav {
+  /* height: 80px; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: beige;
+  color: black;
+  padding: 10px;
+}
+
+nav .logo {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+
+nav ul {
+  padding-inline: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  gap: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav button {
+  background-color: black;
+  color: white;
+  border: none;
+  width: 15vh;
+  height: 5vh;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background-color: red;
+  color: black;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: large;
+}
+
+img:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.Banner {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 20px;
+}
+
+.Banner-img {
+  width: 100%;
+  height: 100%;
+  background-image: url("./back img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 12px;
+  border: none;
+  filter: blur(5px);
+  flex-wrap: wrap;
+}
+
+.Banner-text {
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.Banner-text h1 {
+  font-size: 3rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.Banner-text h3 {
+  font-size: 1.5rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 10px 0;
+}
+
+
+.Banner-text button {
+  background-color: white;
+  color: black;
+  width: 20vh;
+  height: 5vh;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.Banner-text:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 12px;
+  padding: 20px;
+  transition: 0.3s;
+}
+
+.Banner-text button:hover {
+  background-color: red;
+  color: black;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.About-section {
+  background-color: rgb(75, 60, 60);
+  color: white;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-radius: 20px;
+  gap: 20px;
+  border: none;
+}
+
+.About-section h1,
+h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.About-text {
+  width: 50%;
+  height: 100%;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: small;
+  cursor: pointer;
+
+}
+
+.About-section img {
+  width: 300px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  border: none;
+}
+
+.About-text h1:hover,
+h2:hover,
+p:hover {
+  transition: 0.3s;
+  transform: scale(1.1);
+
+}
+
+.Services-section {
+  width: 100%;
+  height: 70vh;
+  background-color: rgb(26, 27, 32);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 20px;
+  border: none;
+  flex-wrap: wrap;
+}
+
+.Services-section h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Service-item img {
+  width: 350px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.Service-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.Services-section h1:hover {
+  transition: 0.3s;
+  transform: scale(1.1);
+
+}
+
+.footer-section {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  background-color: bisque;
+  color: black;
+  padding: 20px;
+}
+
+.footer-logo img {
+  width: 350px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.footer-contact ul li {
+  list-style-type: none;
+}
+
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
+
+.footer-social img {
+  width: 30px;
+  height: 30px;
+  gap: 10px;
+
+}
+
+
+.footer-map iframe {
+  width: 350px;
+  height: 300px;
+  border: none;
+  border-radius: 12px;
+}
+
+.footer-contact:hover,
+.footer-social:hover,
+.footer-map iframe:hover {
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+
+@media screen and (max-width:465px) {
+  nav {
+    width: 100%;
+    gap: 20px;
+  }
+
+  nav ul {
+    display: inline;
+  }
+
+  .Banner-text {
+    margin-top: 150px;
+  }
+
+  .About-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Services-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width:500px) {
+  nav {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  @media screen and (max-width: 768px) {
+
+    nav {
+      width: 100%;
+      max-height: fit-content;
+
+      gap: 20px;
+    }
+
+  }
+
+  .Banner {
+    width: 100%;
+    max-height: fit-content;
+  }
+
+  .About-section {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+
+  }
+
+  .Services-section {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .footer-section {
+    width: 100%;
+    height: auto;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+}
+
+
+
+@media screen and (max-width: 1024px) {
+
+  nav {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    padding-inline: 20px;
+    gap: 20px;
+  }
+
+  .Banner {
+    width: 100%;
+    max-height: fit-content;
+  }
+
+  .About-section {
+    width: 100%;
+    max-height: fit-content;
+    padding-inline: 20px;
+  }
+
+  .Services-section {
+    width: 100%;
+    height: auto;
+    padding-inline: 20px;
+    gap: 20px;
+
+  }
+
+  .footer-section {
+    width: 100%;
+    height: auto;
+    gap: 20px;
+    padding-inline: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+  }
+
+  .footer-map {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+}
+
+@media screen and (max-width: 1440px) {
+
+  nav {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    padding-inline: 20px;
+    gap: 20px;
+  }
+
+  
+
+  .Banner {
+    width: 100%;
+    max-height: fit-content;
+  }
+
+  .About-section {
+    width: 100%;
+    max-height: fit-content;
+    padding-inline: 20px;
+  }
+
+  .Services-section {
+    width: 100%;
+    height: auto;
+    padding-inline: 20px;
+    gap: 20px;
+
+  }
+
+  .footer-section {
+    width: 100%;
+    height: fit-content;
+    gap: 20px;
+    padding-inline: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+  }
+
+  .footer-map {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+}
